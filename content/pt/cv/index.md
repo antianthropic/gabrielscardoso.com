@@ -14,7 +14,7 @@ translated: true
 
 Barcarena, Pará, Brasil · +55 91 99213-0338 · [eng.gabrielscardoso@gmail.com](mailto:eng.gabrielscardoso@gmail.com)
 
-[Portfólio](https://www.gabrielscardoso.com) · [GitHub](https://github.com/eng-gabrielscardoso) · [LinkedIn](https://linkedin.com/in/eng-gabrielscardoso)
+[Portfólio](https://www.gabrielscardoso.com) · [GitHub](https://github.com/antianthropic) · [LinkedIn](https://linkedin.com/in/antianthropic)
 
 ## Resumo
 

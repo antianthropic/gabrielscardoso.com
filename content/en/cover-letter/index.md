@@ -10,7 +10,7 @@ updatedAt: '2026-08'
 
 Barcarena, Pará, Brazil · +55 91 99213-0338 · [eng.gabrielscardoso@gmail.com](mailto:eng.gabrielscardoso@gmail.com)
 
-[Portfolio](https://www.gabrielscardoso.com) · [GitHub](https://github.com/eng-gabrielscardoso) · [LinkedIn](https://linkedin.com/in/eng-gabrielscardoso)
+[Portfolio](https://www.gabrielscardoso.com) · [GitHub](https://github.com/antianthropic) · [LinkedIn](https://linkedin.com/in/antianthropic)
 
 Dear hiring manager,
 
@@ -27,5 +27,5 @@ Recently I have been shipping decentralised systems on Hyperledger Fabric, Besu 
 
 I am immediately available and would welcome a conversation about how I can help your team ship reliable software. Thank you for your time and consideration.
 
-Best regards,  
+Best regards,
 Gabriel Santos Cardoso

@@ -11,7 +11,7 @@ translated: true
 
 Barcarena, Pará, Brasil · +55 91 99213-0338 · [eng.gabrielscardoso@gmail.com](mailto:eng.gabrielscardoso@gmail.com)
 
-[Portfólio](https://www.gabrielscardoso.com) · [GitHub](https://github.com/eng-gabrielscardoso) · [LinkedIn](https://linkedin.com/in/eng-gabrielscardoso)
+[Portfólio](https://www.gabrielscardoso.com) · [GitHub](https://github.com/antianthropic) · [LinkedIn](https://linkedin.com/in/antianthropic)
 
 Prezado(a) recrutador(a),
 
@@ -28,5 +28,5 @@ Recentemente tenho entregado sistemas descentralizados em Hyperledger Fabric, Be
 
 Estou disponível imediatamente e ficaria feliz em conversar sobre como posso ajudar o seu time a entregar software confiável. Agradeço o tempo e a consideração.
 
-Atenciosamente,  
+Atenciosamente,
 Gabriel Santos Cardoso

@@ -70,7 +70,7 @@ export const siteConfig = {
 
   /** Powers the header link, Nuxt Studio commits and the "view source" button. */
   repository: {
-    owner: 'eng-gabrielscardoso',
+    owner: 'antianthropic',
     name: 'gabrielscardoso.com',
     branch: 'main',
   } satisfies SiteRepository,
@@ -80,14 +80,14 @@ export const siteConfig = {
       id: 'github',
       label: 'GitHub',
       icon: 'i-lucide-github',
-      href: 'https://github.com/eng-gabrielscardoso',
+      href: 'https://github.com/antianthropic',
       featured: true,
     },
     {
       id: 'linkedin',
       label: 'LinkedIn',
       icon: 'i-lucide-linkedin',
-      href: 'https://www.linkedin.com/in/eng-gabrielscardoso',
+      href: 'https://www.linkedin.com/in/antianthropic',
       featured: true,
     },
     {
