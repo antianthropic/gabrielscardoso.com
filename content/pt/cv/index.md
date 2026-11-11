@@ -1,18 +1,18 @@
 ---
 title: Currículo
-
 description: Engenheiro de Software com mais de 5 anos construindo sistemas em produção para empresas de blockchain, fintech, telecomunicações e cibersegurança.
-
-updatedAt: '2026-08'
-
+sitemap:
+  loc: /pt/cv
+  lastmod: 2026-08
 translated: true
+updatedAt: 2026-08
 ---
 
 # Gabriel Santos Cardoso
 
 **Engenheiro de Software — Backend, Blockchain e Cloud**
 
-Barcarena, Pará, Brasil · +55 91 99213-0338 · [eng.gabrielscardoso@gmail.com](mailto:eng.gabrielscardoso@gmail.com)
+Barcarena, Pará, Brasil · +55 91 99213-0338 · <eng.gabrielscardoso@gmail.com>
 
 [Portfólio](https://www.gabrielscardoso.com) · [GitHub](https://github.com/antianthropic) · [LinkedIn](https://linkedin.com/in/antianthropic)
 
@@ -40,7 +40,7 @@ Engenheiro de Software com mais de 5 anos construindo sistemas em produção par
 
 ### Desenvolvedor Blockchain — GoLedger
 
-_Ago 2025 – Atual_
+*Ago 2025 – Atual*
 
 - Construo sistemas descentralizados em Hyperledger Fabric e Besu, da arquitetura de rede até o deploy em produção.
 - Entreguei a plataforma Artigos de Sustentabilidade para a Caixa Econômica Federal, conectando registros on-chain a pagamentos via Pix para financiar iniciativas ambientais.
@@ -51,7 +51,7 @@ _Ago 2025 – Atual_
 
 ### Desenvolvedor de Dados — Indico
 
-_Jun 2025 – Atual_
+*Jun 2025 – Atual*
 
 - Entrego soluções de ponta a ponta para marcas globais como Lindt, Galderma, JSL e Ancar, da especificação técnica até o release.
 - Construo e mantenho APIs e aplicações com Go (Fiber), Python (Flask) e frontends em Angular.
@@ -62,7 +62,7 @@ _Jun 2025 – Atual_
 
 ### Desenvolvedor Full Stack — Merchion
 
-_Mar 2025 – Ago 2025_
+*Mar 2025 – Ago 2025*
 
 - Modernizei infraestrutura legada em arquiteturas de microsserviços escaláveis para clientes como Perto e Zuki.
 - Entreguei funcionalidades full stack em Angular, Next.js e Nuxt no frontend e Go, Java (Spring Boot) e NestJS no backend.
@@ -73,7 +73,7 @@ _Mar 2025 – Ago 2025_
 
 ### Desenvolvedor Full Stack — Fone Ninja
 
-_Mai 2024 – Abr 2025_
+*Mai 2024 – Abr 2025*
 
 - Fui responsável pelo módulo de Assistência Técnica como engenheiro e Product Owner, conduzindo decisões técnicas e discovery com clientes e stakeholders.
 - Entreguei melhorias em ordens de serviço, gestão de atendimento por loja, checklists eletrônicos e um quadro Kanban configurável para acompanhamento visual.
@@ -84,7 +84,7 @@ _Mai 2024 – Abr 2025_
 
 ### Desenvolvedor Full Stack — DefSafe
 
-_Mar 2024 – Mai 2024_
+*Mar 2024 – Mai 2024*
 
 - Implementei autenticação social com AWS Cognito e provedores OIDC (Google, LinkedIn, Microsoft Azure).
 - Construí Single Sign-On corporativo sobre SAML, integrando Google Workspace e Microsoft Entra ID para atender requisitos empresariais de segurança e conformidade.
@@ -94,7 +94,7 @@ _Mar 2024 – Mai 2024_
 
 ### Desenvolvedor Full Stack — Dacxi Chain
 
-_Jan 2023 – Abr 2024_
+*Jan 2023 – Abr 2024*
 
 - Prototipei o MVP da Dacxi Chain: API interna em Go integrada a smart contracts em Solidity, API pública em NestJS e frontend em Svelte + Firebase.
 - Construí a aplicação de produção em Vue.js e Laravel, cobrindo API REST, componentes de design system e fluxos completos de usuário com atenção a acessibilidade e performance; documentei a API com OpenAPI.
@@ -105,7 +105,7 @@ _Jan 2023 – Abr 2024_
 
 ### Desenvolvedor Full Stack — Wealth99
 
-_Abr 2022 – Abr 2024_
+*Abr 2022 – Abr 2024*
 
 - Liderei o rebranding e a rearquitetura de uma plataforma whitelabel de investimentos, migrando Vue 2 para Vue 3, Webpack para Vite e introduzindo TypeScript.
 - Construí gráficos financeiros, histórico de transações, fluxos de compra e venda de ativos e um dashboard interativo de portfólio.
@@ -116,21 +116,23 @@ _Abr 2022 – Abr 2024_
 
 ## Experiências Anteriores
 
-**Desenvolvedor Full Stack**, Xenara AI — _Mai 2025._ Projetei, desenvolvi e testei funcionalidades da plataforma com Next.js, NestJS, TypeScript e MongoDB.
+**Desenvolvedor Full Stack**, Xenara AI — *Mai 2025.* Projetei, desenvolvi e testei funcionalidades da plataforma com Next.js, NestJS, TypeScript e MongoDB.
 
-**Desenvolvedor Full Stack**, Universidade Federal do Pará (UFPA) — _Set 2021 – Set 2022._ Mantive os repositórios institucionais da UFPA (RIUFPA, BDM, Livro Aberto), migrei o Repositório de Patentes (RIPAT) do DSpace 6 para o 7 e automatizei rotinas de servidor e backups com Python, Cron e SSH. Construí sistemas internos para a Biblioteca Central e mantive os sites institucionais em WordPress.
+**Desenvolvedor Full Stack**, Universidade Federal do Pará (UFPA) — *Set 2021 – Set 2022.* Mantive os repositórios institucionais da UFPA (RIUFPA, BDM, Livro Aberto), migrei o Repositório de Patentes (RIPAT) do DSpace 6 para o 7 e automatizei rotinas de servidor e backups com Python, Cron e SSH. Construí sistemas internos para a Biblioteca Central e mantive os sites institucionais em WordPress.
 
 ## Formação
 
-**MBA, Administração e Gestão de Tecnologia da Informação** — Anhanguera Educacional, _2025_
+**Tecnólogo, Análise e Desenvolvimento de Sistemas** — Universidade Cruzeiro do Sul, *2026 – em andamento*
 
-**Pós-graduação, Arquitetura de Software** — Anhanguera Educacional, _2024 – 2025_
+**MBA, Administração e Gestão de Tecnologia da Informação** — Anhanguera Educacional, *2025*
 
-**Pós-graduação, Engenharia de Software** — UniFECAF, _2021 – 2022_
+**Pós-graduação, Arquitetura de Software** — Anhanguera Educacional, *2024 – 2025*
 
-**Bacharelado, Sistemas de Informação** — Universidade Federal do Pará (UFPA), _2021 – em andamento_
+**Pós-graduação, Engenharia de Software** — UniFECAF, *2021 – 2022*
 
-**Tecnólogo, Gestão de Logística e Cadeia de Suprimentos** — UNIP, _2019 – 2021_
+**Bacharelado, Sistemas de Informação** — Universidade Federal do Pará (UFPA), *2021 – em andamento*
+
+**Tecnólogo, Gestão de Logística e Cadeia de Suprimentos** — UNIP, *2019 – 2021*
 
 ## Idiomas
 
