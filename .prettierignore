@@ -1,0 +1,5 @@
+# Content is authored through Nuxt Studio, whose serializer writes Markdown
+# emphasis as `*text*` while Prettier always rewrites it to `_text_`. Prettier
+# has no option to change that, so formatting content here would fail CI on
+# every Studio commit. Studio owns the formatting of this directory.
+content/
