@@ -3,9 +3,9 @@ title: Curriculum vitae
 description: Software Engineer with 5+ years building production systems for blockchain, fintech, telecommunications and cybersecurity companies.
 sitemap:
   loc: /cv
-  lastmod: 2026-08
+  lastmod: 2026-11
 translated: false
-updatedAt: 2026-08
+updatedAt: 2026-11
 ---
 
 # Gabriel Santos Cardoso

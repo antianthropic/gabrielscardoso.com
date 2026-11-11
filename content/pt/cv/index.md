@@ -3,9 +3,9 @@ title: Currículo
 description: Engenheiro de Software com mais de 5 anos construindo sistemas em produção para empresas de blockchain, fintech, telecomunicações e cibersegurança.
 sitemap:
   loc: /pt/cv
-  lastmod: 2026-08
+  lastmod: 2026-11
 translated: true
-updatedAt: 2026-08
+updatedAt: 2026-11
 ---
 
 # Gabriel Santos Cardoso
