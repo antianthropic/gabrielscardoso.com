@@ -20,7 +20,12 @@ jobs:
       - run: npm run format:check
       - run: npm run typecheck
       - run: npm run test:unit
-      - run: npx playwright install chromium --with-deps
+      # No --with-deps: the runner image already ships every shared library
+      # Chromium needs, so --with-deps only adds optional font packages via
+      # apt. Those Ubuntu mirrors intermittently fail DNS resolution on GitHub
+      # runners, stalling ~10 minutes and failing the job. The browser itself
+      # downloads from the Playwright CDN, and no test relies on screenshots.
+      - run: npx playwright install chromium
       - run: npm run test:nuxt
       - run: npm run test:runtime
 
