@@ -33,11 +33,11 @@ useSeoMeta({
 
       <div class="mb-12 grid gap-4 sm:grid-cols-2">
         <UCard class="glass text-center">
-          <p class="text-3xl font-bold text-green-400">{{ stats.total }}</p>
+          <p class="text-3xl font-bold text-neutral-100">{{ stats.total }}</p>
           <p class="text-sm text-neutral-400">{{ t('projects.total') }}</p>
         </UCard>
         <UCard class="glass text-center">
-          <p class="text-3xl font-bold text-green-300">{{ stats.active }}</p>
+          <p class="text-3xl font-bold text-primary">{{ stats.active }}</p>
           <p class="text-sm text-neutral-400">{{ t('projects.active') }}</p>
         </UCard>
       </div>

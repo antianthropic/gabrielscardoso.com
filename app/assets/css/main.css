@@ -5,19 +5,68 @@
 @theme {
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
 
-  /* Nuxt-inspired green palette */
-  --color-green-50: #ecfdf5;
-  --color-green-100: #d1fae5;
-  --color-green-200: #a7f3d0;
-  --color-green-300: #6ee7b7;
-  --color-green-400: #36e4a0;
-  --color-green-500: #00dc82;
-  --color-green-600: #00b870;
-  --color-green-700: #00945c;
-  --color-green-800: #007048;
-  --color-green-900: #004d32;
-  --color-green-950: #002919;
+/**
+ * Brand identity. Every colour has one job, and the proportions matter as much as the hues:
+ * roughly 75% neutral surfaces, 15% typography and structure, 10% chromatic accents, so that
+ * crimson keeps its force by not being repeated on every card.
+ *
+ * - Crimson  — the signature: primary actions, the name in the hero, markers of what is current.
+ * - Wine     — depth: ambient light, glows behind the portrait, text selection.
+ * - Obsidian — the environment: page, header, footer and card surfaces.
+ * - Ivory    — elegance and legibility: headings and body copy.
+ * - Bronze   — heraldry only: the monogram and the name it stands for. Do not spread it further.
+ *
+ * `static` emits every shade even when no utility uses it: Nuxt UI resolves `primary` and `neutral`
+ * at runtime through `var(--color-<name>-<shade>)`, which Tailwind cannot see when it scans sources.
+ */
+@theme static {
+  --color-crimson: #9e1b32;
+  --color-wine: #5a1020;
+  --color-obsidian: #171417;
+  --color-ivory: #f0ebe4;
+  --color-bronze: #b49a78;
+
+  /*
+   * Nuxt UI `primary`. 700 is the brand crimson and 900 the wine. Crimson only reaches 2.3:1 on
+   * obsidian, so the light steps exist for text on dark surfaces: 400 (Nuxt UI's dark-mode
+   * `--ui-primary`) keeps at least 4.5:1 on cards and soft buttons.
+   */
+  --color-crimson-50: #fdf2f3;
+  --color-crimson-100: #fbe5e7;
+  --color-crimson-200: #f9c9ce;
+  --color-crimson-300: #ee939e;
+  --color-crimson-400: #eb6e7c;
+  --color-crimson-500: #d63c53;
+  --color-crimson-600: #bf2841;
+  --color-crimson-700: #9e1b32;
+  --color-crimson-800: #7c162a;
+  --color-crimson-900: #5a1020;
+  --color-crimson-950: #3a0d15;
+
+  /*
+   * Nuxt UI `neutral`, and therefore every `neutral-*` utility: ivory at 100, obsidian at 950,
+   * interpolated in OKLab so the greys stay warm. 500 (dimmed text) keeps 4.5:1 on cards.
+   */
+  --color-obsidian-50: #f9f6f2;
+  --color-obsidian-100: #f0ebe4;
+  --color-obsidian-200: #dfdad4;
+  --color-obsidian-300: #c1bdb8;
+  --color-obsidian-400: #a29d9a;
+  --color-obsidian-500: #898583;
+  --color-obsidian-600: #5e5a5a;
+  --color-obsidian-700: #423f40;
+  --color-obsidian-800: #2d2a2c;
+  --color-obsidian-900: #201d20;
+  --color-obsidian-950: #171417;
+}
+
+/* Nuxt UI defaults to pure white for highlights and inverted surfaces; the brand uses ivory. */
+.dark {
+  --ui-text-highlighted: var(--color-ivory);
+  --ui-bg-inverted: var(--color-ivory);
+  --ui-border-inverted: var(--color-ivory);
 }
 
 html {
@@ -25,7 +74,12 @@ html {
 }
 
 body {
-  @apply bg-neutral-950 text-neutral-100 antialiased;
+  @apply bg-obsidian text-ivory antialiased;
+}
+
+::selection {
+  background-color: var(--color-wine);
+  color: var(--color-ivory);
 }
 
 @layer base {
@@ -36,16 +90,22 @@ body {
   }
 }
 
+/*
+ * Wine light falling on obsidian: depth without competing with the crimson in the content.
+ * Sized in viewport units so a long page (the about timeline) gets the same pool of light as a
+ * short one, instead of a wine wash stretched down its whole left edge.
+ */
 .page-ambient {
-  background-color: var(--color-neutral-950);
+  background-color: var(--color-obsidian);
   background-image:
-    radial-gradient(ellipse 75% 55% at 8% -5%, rgb(0 220 130 / 0.1), transparent 55%),
-    radial-gradient(ellipse 55% 45% at 92% 8%, rgb(0 220 130 / 0.07), transparent 50%),
-    radial-gradient(ellipse 65% 45% at 50% 100%, rgb(0 220 130 / 0.05), transparent 55%);
+    radial-gradient(ellipse 70vw 80vh at 8% -5vh, rgb(90 16 32 / 0.45), transparent 65%),
+    radial-gradient(ellipse 50vw 60vh at 92% 0, rgb(158 27 50 / 0.1), transparent 60%),
+    radial-gradient(ellipse 65vw 50vh at 50% 100%, rgb(90 16 32 / 0.25), transparent 65%);
 }
 
-.text-gradient {
-  @apply bg-linear-to-r from-green-400 to-green-300 bg-clip-text text-transparent;
+/* The signature: crimson lifted just enough to read as display type on obsidian (large text, ≥3:1). */
+.text-signature {
+  @apply bg-linear-to-r from-crimson-500 to-crimson-400 bg-clip-text text-transparent;
 }
 
 .glass {
@@ -55,7 +115,7 @@ body {
 /* Prose renders CV contact details as links; the default is too dim against the document card. */
 .cv-document :where(a),
 .letter-document :where(a) {
-  @apply text-green-400 no-underline transition-colors hover:text-green-300 hover:underline;
+  @apply text-primary no-underline transition-colors hover:text-crimson-300 hover:underline;
 }
 
 .cv-document :where(h1, h2, h3) :where(a),
@@ -63,7 +123,7 @@ body {
   @apply text-inherit no-underline;
 }
 
-/* Cover letter reads as a letter on screen: larger type, more air, a green rule under the header. */
+/* Cover letter reads as a letter on screen: larger type, more air, a rule under the header. */
 .letter-prose {
   @apply text-base leading-7;
 }
@@ -73,7 +133,7 @@ body {
 }
 
 .letter-prose :where(h1 + p) {
-  @apply mt-0 text-base font-semibold text-green-400;
+  @apply mt-0 text-base font-semibold text-primary;
 }
 
 .letter-prose :where(h2) {
@@ -101,7 +161,7 @@ body {
 
   body {
     background: #fff;
-    color: #111827;
+    color: var(--color-obsidian);
   }
 
   main {
@@ -116,7 +176,7 @@ body {
   .cv-document :where(*),
   .letter-document,
   .letter-document :where(*) {
-    color: #111827;
+    color: var(--color-obsidian);
     background: none;
     box-shadow: none;
   }
@@ -130,7 +190,7 @@ body {
 
   .cv-document :where(a),
   .letter-document :where(a) {
-    color: #111827;
+    color: var(--color-crimson);
     text-decoration: underline;
   }
 
@@ -142,6 +202,7 @@ body {
 
   .cv-document :where(h1, h2, h3) :where(a),
   .letter-document :where(h1, h2, h3) :where(a) {
+    color: var(--color-obsidian);
     text-decoration: none;
   }
 }

@@ -17,7 +17,7 @@ const { t, locale } = useI18n()
 </script>
 
 <template>
-  <UCard class="glass group h-full transition-all hover:border-green-500/30">
+  <UCard class="glass group h-full transition-all hover:border-crimson/50">
     <div v-if="image" class="mb-4 overflow-hidden rounded-lg">
       <NuxtImg
         :src="image"
@@ -30,9 +30,9 @@ const { t, locale } = useI18n()
     <div class="flex items-start justify-between gap-2">
       <div>
         <h2 class="font-semibold text-neutral-100">{{ title }}</h2>
-        <p class="text-sm text-green-400">{{ association }}</p>
+        <p class="text-sm text-neutral-300">{{ association }}</p>
       </div>
-      <UBadge v-if="isActive(endDate)" color="success" variant="subtle" size="sm"> Active </UBadge>
+      <UBadge v-if="isActive(endDate)" color="primary" variant="subtle" size="sm"> Active </UBadge>
     </div>
 
     <p v-if="description" class="mt-3 line-clamp-3 text-sm text-neutral-400">
@@ -44,7 +44,7 @@ const { t, locale } = useI18n()
     </p>
 
     <div class="mt-4 flex gap-2">
-      <UButton v-if="to" :to="to" color="primary" variant="soft" size="sm">
+      <UButton v-if="to" :to="to" color="neutral" variant="soft" size="sm">
         {{ t('projects.readMore') }}
       </UButton>
       <UButton

@@ -54,13 +54,20 @@ const LETTER_LAYOUT: LayoutMetrics = {
   contentWidth: PAGE.width - 58 - 58,
 }
 
-const INK = rgb(0.09, 0.1, 0.12)
-const MUTED = rgb(0.33, 0.36, 0.4)
-const FAINT = rgb(0.55, 0.58, 0.62)
-const RULE = rgb(0.8, 0.82, 0.84)
-/** The site's green, darkened until it still reads as a link on paper and in greyscale. */
-const LINK = rgb(0, 0.42, 0.29)
-const ACCENT = rgb(0, 0.55, 0.38)
+/** Hex `#rrggbb` to a pdf-lib colour, so the document palette reads like the site's CSS tokens. */
+function hex(value: string): RGB {
+  const channel = (offset: number) => parseInt(value.slice(offset, offset + 2), 16) / 255
+  return rgb(channel(1), channel(3), channel(5))
+}
+
+/** Obsidian scale from `app/assets/css/main.css`: 950 for ink, 600/500 for metadata, 200 for rules. */
+const INK = hex('#171417')
+const MUTED = hex('#5e5a5a')
+const FAINT = hex('#898583')
+const RULE = hex('#dfdad4')
+/** The brand crimson already reads on paper (7.9:1 on white) and stays darker than grey in print. */
+const LINK = hex('#9e1b32')
+const ACCENT = hex('#9e1b32')
 
 type FontWeight = 'regular' | 'bold' | 'italic' | 'boldItalic' | 'mono'
 
@@ -565,7 +572,7 @@ function drawFooters(state: RenderState, label: string, showPageNumbers: boolean
   })
 }
 
-/** Green hairline that separates letterhead from the body — the visual cue a CV section rule is not. */
+/** Crimson hairline that separates letterhead from the body — the visual cue a CV section rule is not. */
 function drawLetterAccent(state: RenderState) {
   state.y -= 14
   state.page.drawLine({

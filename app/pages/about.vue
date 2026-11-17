@@ -85,11 +85,11 @@ useSeoMeta({
           :src="gravatarUrl(siteConfig.avatar.gravatarHash, 200)"
           :alt="siteConfig.name"
           size="3xl"
-          class="shrink-0 ring-2 ring-green-500/50"
+          class="shrink-0 ring-2 ring-crimson/60"
         />
         <div class="flex-1 text-center md:text-left">
           <h1 class="text-4xl font-bold text-neutral-100">{{ siteConfig.name }}</h1>
-          <p class="mt-2 text-lg text-green-400">{{ profile.headline }}</p>
+          <p class="mt-2 text-lg text-primary">{{ profile.headline }}</p>
           <p class="mt-1 text-neutral-500">{{ profile.location }}</p>
         </div>
       </div>

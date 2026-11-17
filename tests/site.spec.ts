@@ -9,6 +9,17 @@ for (const path of pages) {
     await goto(path, { waitUntil: 'hydration' })
     await expect(page.locator('h1').first()).toBeVisible()
 
+    // Sections fade in from opacity 0 (motion-v). Auditing mid-fade measures a frame nobody reads
+    // and reports its contrast as a failure, so wait until everything on screen has come to rest.
+    await page.waitForFunction(() =>
+      Array.from(document.querySelectorAll<HTMLElement>('[style*="opacity"]'))
+        .filter((element) => {
+          const rect = element.getBoundingClientRect()
+          return rect.bottom > 0 && rect.top < window.innerHeight
+        })
+        .every((element) => getComputedStyle(element).opacity === '1'),
+    )
+
     const accessibilityScanResults = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa'])
       .analyze()

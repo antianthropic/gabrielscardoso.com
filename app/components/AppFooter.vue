@@ -28,7 +28,7 @@ const currentYear = new Date().getFullYear()
             <li v-for="link in footerLinks" :key="link.to">
               <NuxtLink
                 :to="link.to"
-                class="text-sm text-neutral-400 transition-colors hover:text-green-400"
+                class="text-sm text-neutral-400 transition-colors hover:text-primary"
               >
                 {{ link.label }}
               </NuxtLink>

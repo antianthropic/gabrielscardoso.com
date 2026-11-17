@@ -11,7 +11,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <UCard class="glass group h-full transition-all hover:border-green-500/30">
+  <UCard class="glass group h-full transition-all hover:border-crimson/50">
     <time class="text-xs text-neutral-500">{{ date }}</time>
     <h2 class="mt-2 text-xl font-semibold text-neutral-100">{{ title }}</h2>
     <p class="mt-2 line-clamp-3 text-sm text-neutral-400">{{ description }}</p>
@@ -20,7 +20,7 @@ const { t } = useI18n()
         {{ tag }}
       </UBadge>
     </div>
-    <UButton :to="to" color="primary" variant="soft" size="sm" class="mt-4">
+    <UButton :to="to" color="neutral" variant="soft" size="sm" class="mt-4">
       {{ t('blog.readMore') }}
     </UButton>
   </UCard>

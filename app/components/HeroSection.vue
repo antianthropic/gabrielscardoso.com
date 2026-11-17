@@ -29,7 +29,7 @@ const avatarSrc = gravatarUrl(siteConfig.avatar.gravatarHash, 512)
             {{ t('home.greeting') }}
             <br />
             {{ t('home.iam') }}
-            <span class="text-gradient">{{ siteConfig.nickname }}</span>
+            <span class="text-signature">{{ siteConfig.nickname }}</span>
             <br />
             {{ t('home.role') }}
           </h1>
@@ -40,7 +40,7 @@ const avatarSrc = gravatarUrl(siteConfig.avatar.gravatarHash, 512)
 
           <p class="mt-5 text-lg text-neutral-400 md:text-xl">
             {{ t('home.locationPrefix') }}
-            <span class="font-medium text-green-400">{{ props.location }}</span
+            <span class="font-medium text-neutral-100">{{ props.location }}</span
             >.
           </p>
 
@@ -58,13 +58,10 @@ const avatarSrc = gravatarUrl(siteConfig.avatar.gravatarHash, 512)
           :transition="{ duration: 0.6, delay: 0.1 }"
         >
           <div class="relative mx-auto size-48 sm:size-52 lg:size-60">
-            <div
-              class="absolute -inset-3 rounded-full bg-green-500/10 blur-2xl"
-              aria-hidden="true"
-            />
+            <div class="absolute -inset-3 rounded-full bg-wine/60 blur-2xl" aria-hidden="true" />
 
             <div
-              class="relative size-full overflow-hidden rounded-full ring-2 ring-green-500/30 shadow-xl shadow-black/40"
+              class="relative size-full overflow-hidden rounded-full ring-2 ring-crimson/60 shadow-xl shadow-black/40"
             >
               <img
                 :src="avatarSrc"
@@ -77,7 +74,7 @@ const avatarSrc = gravatarUrl(siteConfig.avatar.gravatarHash, 512)
             </div>
 
             <span
-              class="absolute right-[11%] bottom-[11%] size-3.5 rounded-full bg-green-500 ring-4 ring-neutral-950"
+              class="absolute right-[11%] bottom-[11%] size-3.5 rounded-full bg-crimson ring-4 ring-obsidian"
               aria-hidden="true"
             />
           </div>

@@ -61,9 +61,10 @@ const localeItems = computed(() => [
         <SupportButton />
       </div>
 
+      <!-- The name is the site's crest, the one place bronze belongs outside the monogram. -->
       <NuxtLink
         :to="localePath('/')"
-        class="font-semibold text-neutral-100 transition-colors hover:text-green-400"
+        class="font-semibold tracking-wide text-bronze transition-colors hover:text-ivory"
       >
         {{ siteConfig.shortName }}
       </NuxtLink>

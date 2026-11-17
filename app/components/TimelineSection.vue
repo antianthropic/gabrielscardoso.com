@@ -31,7 +31,7 @@ const { t, locale } = useI18n()
         class="relative flex gap-6 pb-10 last:pb-0"
       >
         <div class="flex flex-col items-center">
-          <div class="h-3 w-3 rounded-full bg-green-500 ring-4 ring-green-500/20" />
+          <div class="h-3 w-3 rounded-full bg-crimson ring-4 ring-wine/50" />
           <div
             v-if="index < items.length - 1"
             class="mt-2 w-px flex-1 bg-neutral-800"
@@ -50,7 +50,7 @@ const { t, locale } = useI18n()
             <div class="flex flex-wrap items-start justify-between gap-2">
               <div>
                 <h3 class="font-semibold text-neutral-100">{{ item.title }}</h3>
-                <p class="text-sm text-green-400">{{ item.subtitle }}</p>
+                <p class="text-sm text-neutral-300">{{ item.subtitle }}</p>
               </div>
               <div class="flex flex-col items-end gap-1">
                 <UBadge v-if="item.badge" color="neutral" variant="subtle" size="sm">

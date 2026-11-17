@@ -58,7 +58,7 @@ useSchemaOrg([
 
       <header class="mb-8">
         <h1 class="text-4xl font-bold text-neutral-100">{{ project.title }}</h1>
-        <p class="mt-2 text-green-400">{{ project.association }}</p>
+        <p class="mt-2 text-neutral-300">{{ project.association }}</p>
         <p class="mt-2 text-sm text-neutral-500">
           {{
             formatDateRange(

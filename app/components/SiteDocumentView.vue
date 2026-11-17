@@ -71,7 +71,7 @@ useSchemaOrg([
         class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between print:hidden"
       >
         <div>
-          <p class="text-xs font-semibold tracking-widest text-green-400 uppercase">
+          <p class="text-xs font-semibold tracking-widest text-primary uppercase">
             {{ t(labelKey) }}
           </p>
           <p class="mt-2 text-sm text-neutral-500">
@@ -107,7 +107,7 @@ useSchemaOrg([
         <NuxtLink
           :to="relatedTo"
           :target="relatedExternal ? '_blank' : undefined"
-          class="text-green-400 transition-colors hover:text-green-300"
+          class="text-primary transition-colors hover:text-crimson-300"
         >
           {{ t(related.labelKey) }}
           <UIcon
