@@ -16,9 +16,9 @@
   },
   "home": {
     "greeting": "Olá",
-    "iam": "Eu sou",
-    "role": "Engenheiro de Software.",
-    "locationPrefix": "Atualmente sobrevivendo no",
+    "iam": "Sou",
+    "role": "Engenheiro de Software",
+    "locationPrefix": "Atualmente sobrevivendo (ou tentando) no",
     "cta": "Vamos conversar!",
     "skillsTitle": "Habilidades e Interesses",
     "featuredProjects": "Projetos em Destaque",
