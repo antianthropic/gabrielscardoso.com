@@ -13,10 +13,14 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      // `?v=` busts browser favicon caches (Safari, Brave) that ignore
+      // HTTP revalidation. Bump it whenever the icon artwork changes.
+      // `/favicon.ico` has no tag: browsers request it implicitly, and the
+      // static file in `public/` overrides Nitro's placeholder response.
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'icon', type: 'image/png', href: '/favicon.png', sizes: '96x96' },
-        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg?v=2' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png?v=2', sizes: '96x96' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png?v=2', sizes: '180x180' },
       ],
       // Obsidian, the page surface (see the brand palette in `app/assets/css/main.css`).
       meta: [{ name: 'theme-color', content: '#171417' }],
